@@ -1,0 +1,30 @@
+#harvest {
+  background-image: url("Esme_Anim.gif");
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 5%;
+  position: absolute;
+  left: 45.3%;
+  right: 50%;
+}
+
+#harvest:active {
+  background-image: url("Esme_Sprite_2.png");
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 5%;
+}
+
+#points {
+  position: absolute;
+  text-align: center;
+  margin-top: 11.8%;
+  width: 100%;
+}
+
+#buttons {
+  position: absolute;
+  left: 55%;
+}

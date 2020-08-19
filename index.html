@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Regalia</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./src/clicker-game.js"></script>
+  </head>
+  <body onload="esme.getElements()">
+    <span id="points">crafting-materials</span><br>
+    <div id="harvest" onclick="esme.harvestPlants(1)"></div><br>
+    <div id="buttons">
+    <button onclick="esme.hireRetainer()">Hire Retainer!</button>
+    <span id="retainers">0</span>
+    <span id="retainerCost">10</span><br>
+    <button onclick="esme.buyAirship()">Buy Airship!</button>
+    <span id="airships">0</span>
+    <span id="airshipCost">500</span>
+    </div>
+  </body>
+</html>
