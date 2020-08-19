@@ -21,11 +21,11 @@ class Esme {
   };
 
   hireRetainer() {
-    this.retainerCost = Math.floor(10 * Math.pow(1.1, this.retainers));
-    if(this.craftingMaterials >= this.retainerCost) {
+    var retainerCost = Math.floor(10 * Math.pow(1.1, this.retainers));
+    if(this.craftingMaterials >= retainerCost) {
       this.retainers += 1;
-      this.craftingMaterials -= this.retainerCost;
-      this.retainerCostString.innerHTML = this.retainerCost;
+      this.craftingMaterials -= retainerCost;
+      this.retainerCostString.innerHTML = retainerCost;
       this.retainerString.innerHTML = this.retainers;
     };
     var nextRetainerCost = Math.floor(10 * Math.pow(1.1, this.retainers));
@@ -33,11 +33,11 @@ class Esme {
   };
 
   buyAirship() {
-    this.airshipCost = Math.floor(500 * Math.pow(1.1, this.airships));
-    if(this.craftingMaterials >= this.airshipCost) {
+    var airshipCost = Math.floor(500 * Math.pow(1.1, this.airships));
+    if(this.craftingMaterials >= airshipCost) {
       this.airships += 1;
-      this.craftingMaterials -= this.airshipCost;
-      this.airshipCostString.innerHTML = this.airshipCost;
+      this.craftingMaterials -= airshipCost;
+      this.airshipCostString.innerHTML = airshipCost;
       this.airshipString.innerHTML = this.airships;
     }
     var nextAirshipCost = Math.floor(500 * Math.pow(1.1, this.airships));
