@@ -4,18 +4,27 @@
     <meta charset="utf-8">
     <title>Regalia</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet"> 
     <script src="./src/clicker-game.js"></script>
   </head>
   <body onload="esme.getElements()">
     <span id="points">crafting-materials</span><br>
     <div id="harvest" onclick="esme.harvestPlants(1)"></div><br>
-    <div id="buttons">
+    <div id="retainerbutton">
     <button onclick="esme.hireRetainer()">Hire Retainer!</button>
     <span id="retainers">0</span>
-    <span id="retainerCost">10</span><br>
+    <span id="retainerCost">10</span>
+    </div>
+    <div id="retainerspace"></div>
+    <div id="airshipbutton">
     <button onclick="esme.buyAirship()">Buy Airship!</button>
     <span id="airships">0</span>
     <span id="airshipCost">500</span>
+    </div>
+    <div id="airshipspace"></div>
+    <div id="addons">
+      <span id="eScytheCost">50</span>
+      <button id="scytheButton" onclick="esme.enableScythe()">Enchanted Scythe</button>
     </div>
   </body>
 </html>
